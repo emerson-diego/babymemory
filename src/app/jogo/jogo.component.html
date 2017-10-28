@@ -1,0 +1,31 @@
+<p>
+  <button type="button" class="btn btn-primary" id="novoJogo" (click)="start()">Novo Jogo</button>
+</p>
+
+<section class="painel">
+
+  <div class="container">
+      <div class="row">
+
+
+      <div *ngFor="let card of painelJogo">
+
+
+          <div class="col-sm-3">
+              <div class="box" [ngStyle]="{'background-image': card.encontrado ? 'url(' + '../assets/fotos/' + card.baby.foto + ')' : 'url(' + '../assets/fotos/oculto_.png' + ')' }">
+                  <a href="#" class="linkAtivo" (click)="chute(card)"> oi</a>
+
+              </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+  </div>
+  </div>
+
+</section>
