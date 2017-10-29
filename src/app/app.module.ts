@@ -15,7 +15,8 @@ import { JogoComponent } from './jogo/jogo.component';
     JogoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
